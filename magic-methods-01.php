@@ -4,26 +4,26 @@ class MagicDemo
 {
     public function __construct()
     {
-        echo "it's alive!! \n";
+        echo "it's alive! \n";
     }
     
     public function __destruct()
     {
-        echo "destruct(or) \n";
+        echo "it is dead :( \n";
     }
-    
-//     public function __call($name , $arguments)
-//     {
-        
-//     }
 }
 
 $object = new MagicDemo();
-//$object->nonExistingMethod();
+
+
+// unset($object);
+// echo "-----  \n";
+
 
 /**
  * @notes:
- * - mention lazy constructor logic
- * - introduce __call here
+ * - for what is __destruct usually used
+ * - mention lazy constructor logic?
+ * - introduce __call here?
  * 
  */
