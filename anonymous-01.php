@@ -1,7 +1,6 @@
 <?php
 
-$fcija = function ()
-{
+$fcija = function () {
     echo "Hello World!\n";
 };
 
@@ -12,3 +11,7 @@ var_dump($fcija);
 //echo get_class($fcija); //Closure
 
 $fcija = new Closure();
+
+
+//array_walk
+

@@ -1,12 +1,15 @@
 <?php
-
-class Iterator
+/**
+ * Iterator vs. Generator example
+ *
+ */
+class MyIterator
 {
     
 }
 
 
-function generator()
+function my_generator()
 {
     
 }

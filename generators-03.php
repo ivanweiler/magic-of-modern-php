@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * IteratorAggregate using Generator
+ * 
+ */
 class MyCollection implements IteratorAggregate, Countable
 {
     protected $_items = array(1, 2, 3);
