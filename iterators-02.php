@@ -58,4 +58,5 @@ foreach ($object as $key => $value) {
  * @notes:
  * - iterator interface allows the object to dictate how it will be iterated
  *   and what values will be available on each iteration
+ * - SeekableIterator here?
  */

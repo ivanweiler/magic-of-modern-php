@@ -33,8 +33,9 @@ class MyArrayAccess implements ArrayAccess
 
 $object = new MyArrayAccess();
 echo $object['two'];
-unset($object['two']);
+echo $object->offsetGet('two');
 
+unset($object['two']);
 
 /**
  * @notes:
