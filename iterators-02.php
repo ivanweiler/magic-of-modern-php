@@ -12,27 +12,27 @@ class MyIterator implements Iterator
     public function current()
     {
         $var = current($this->var);
-        echo "current: $var\n";
+        //echo "current: $var\n";
         return $var;
     }
 
     public function key()
     {
         $var = key($this->var);
-        echo "key: $var\n";
+        //echo "key: $var\n";
         return $var;
     }
 
     public function next()
     {
         $var = next($this->var);
-        echo "next: $var\n";
+        //echo "next: $var\n";
         return $var;
     }
 
     public function rewind()
     {
-        echo "rewind\n";
+        //echo "rewind\n";
         reset($this->var);
     }
 
@@ -40,7 +40,7 @@ class MyIterator implements Iterator
     {
         $key = key($this->var);
         $var = ($key !== null && $key !== false);
-        echo "valid: $var\n";
+        //echo "valid: $var\n";
         return $var;
     }
 }
@@ -52,6 +52,15 @@ foreach ($object as $key => $value) {
 }
 
 
+/* $object->rewind();
+while($object->valid()) {
+    $key = $object->key();
+    $value = $object->current();
+    
+    echo "echo: $key => $value  \n";
+    
+    $object->next();
+} */
 
 
 /**
