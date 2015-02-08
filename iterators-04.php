@@ -38,7 +38,7 @@ echo $object->offsetGet('two');
 unset($object['two']);
 
 /**
- * @notes:
+ * @reminder:
  * - show Countable, SeekableIterator
  * - is_array, is_object
  */

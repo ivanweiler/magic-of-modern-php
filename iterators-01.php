@@ -25,7 +25,7 @@ foreach ($object as $key => $value) {
     echo "$key = $value\n";
 }
 
-echo $object['a'];
+//echo $object['a'];
 
 
 /**

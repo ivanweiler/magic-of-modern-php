@@ -1,28 +1,9 @@
 <?php
 /**
- * Few built-in iterators (ArrayIterator, ArrayObject, SPL Itterators)
+ * ArrayIterator, ArrayObject
  */
 
-$object = new ArrayIterator(array(1, 2, 3));
-$object->d = 4;
-
-foreach ($object as $key => $value) {
-    echo "$key = $value\n";
-}
-
-echo $object[2]; 
-echo count($object);
-
-var_dump($object->getArrayCopy());
-
-
-//tell about ArrayObject
-//show Collection here?
-
-exit;
-
-
-$object = new ArrayObject(array('one' => 1, 'two' => 2, 'three' => 3));
+$object = new ArrayIterator(array('one' => 1, 'two' => 2, 'three' => 3));
 $object->d = 4;
 
 foreach ($object as $key => $value) {
@@ -31,18 +12,14 @@ foreach ($object as $key => $value) {
 
 echo $object['two'];
 echo count($object);
-//unset($object[2]);
 
+//unset($object['two']);
 $object->offsetUnset('two');
 
-var_dump($object);
+var_dump($object->getArrayCopy());
 
-foreach ($object as $key => $value) {
-    echo "$key = $value\n";
-}
 
-// //test memory -> duplicated array here?
-
+// ArrayObject
 
 /**
  * class MyArrayIterator extends ArrayIterator{}
