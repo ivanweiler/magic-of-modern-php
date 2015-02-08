@@ -1,9 +1,8 @@
 
 
-
 	parsanje velikog fajla (apache log)
 	
-	export tabele sa puno rekorda u fajl 
+	export tabele sa puno rekorda u fajl
 
 	active record example: custom ili eloquent
 
@@ -29,7 +28,6 @@ http://php.net/manual/en/reserved.interfaces.php
 http://fabien.potencier.org/article/45/iterator-or-iteratoraggregate
 http://stackoverflow.com/questions/10502719/difference-between-arrayiterator-arrayobject-and-array-in-php
 
-
 http://stackoverflow.com/questions/10057671/how-foreach-actually-works
 
 
@@ -38,4 +36,6 @@ file parse example -> obuhvaca iteratore, generatore, SplFileObject?
 
 Anonymous
 http://stackoverflow.com/a/4535383
+
+
 

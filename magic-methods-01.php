@@ -9,7 +9,7 @@ class MagicDemo
     
     public function __destruct()
     {
-        echo "it is dead :( \n";
+        echo "it's dead :( \n";
     }
 }
 

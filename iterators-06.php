@@ -19,7 +19,6 @@ class MyCollection implements IteratorAggregate
 
 
 
-
 // echo memory_get_usage(true)/1024 . "\n";
 // $object = new MyCollection(array_fill(0, 1024*1024, 1));
 // echo memory_get_usage(true)/1024 . "\n";
