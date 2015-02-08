@@ -18,6 +18,8 @@ $object = new MagicDemo();
  * - __sleep(), __wakeup() 
  * - __invoke()
  * - __set_state(), __debugInfo()
+ * 
+ * - mention Magic constants
  */
 
 
