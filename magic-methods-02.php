@@ -18,25 +18,20 @@ class MagicDemo
     {
         echo "getter: $name  \n";
     }
-    
-    public static function __callStatic($name , $arguments)
-    {
-    
-    }
 
 }
 
 $object = new MagicDemo();
 $object->nonExistingMethod(1,2,3);
 
-
 // $object->a = 1;
 // echo $object->b;
 // MagicDemo::nonExistingStaticMethod();
 
 
-
 /**
  * @reminder:
  * - rest api example
+ * - shoe __callStatic
+ * - __isset(), __unset()
  */

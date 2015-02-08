@@ -1,9 +1,14 @@
 <?php
 
-$fcija = function () use ($a) {
-    echo "Hello World!\n";
+$a = 'world';
+
+$fcija = function() use ($a) {
+    echo "Hello $a!\n";
 };
 
+//$a = 'Osijek';
+
+$fcija();
 
 /**
  * mention observer/hook usage

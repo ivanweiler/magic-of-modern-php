@@ -1,17 +1,40 @@
 <?php
-
 class MagicDemo
 {
-    public function __construct()
+    public function __toString()
     {
-        //PDO connect, set table
+        return ':]';
     }
- 
-
 }
 
-
-// __toString explain
-// mention others
+$object = new MagicDemo();
 
 
+
+
+
+/**
+ * @reminder:
+ * - __sleep(), __wakeup() 
+ * - __invoke()
+ * - __set_state(), __debugInfo()
+ */
+
+
+
+// class View
+// {
+//     public function render($file, $vars)
+//     {
+//         extract($vars);
+//         include 'view.phtml';
+//     }
+
+//     public function __toString()
+//     {
+//         return $this->render();
+//     }
+// }
+
+// $view = new View;
+// echo $view;

@@ -21,9 +21,8 @@ $object = new MagicDemo();
 
 
 /**
- * @notes:
+ * @reminder:
  * - for what is __destruct usually used
- * - mention lazy constructor logic?
+ * - mention lazy constructor logic
  * - introduce __call here?
- * 
  */

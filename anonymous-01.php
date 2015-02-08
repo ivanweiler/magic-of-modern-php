@@ -6,12 +6,16 @@ $fcija = function () {
 
 $fcija();
 
-var_dump($fcija);
+$myArray = array(1, 2, 3);
+array_walk($myArray, function (&$value) {
+    $value = pow($value, 2);
+});
 
+var_dump($myArray);
+
+//seperate function in variable
+
+
+//var_dump($fcija);
 //echo get_class($fcija); //Closure
-
-$fcija = new Closure();
-
-
-//array_walk
-
+//$fcija = new Closure();
