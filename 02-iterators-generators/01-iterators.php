@@ -29,7 +29,7 @@ foreach ($object as $key => $value) {
 
 
 /**
- * @notes:
+ * @reminder:
  * - which object can be used in a loop in php?
  * - by default, all visible properties will be used for the iteration
  */

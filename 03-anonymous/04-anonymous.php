@@ -1,4 +1,8 @@
 <?php
+/**
+ * Strange JS-like AnonObject example
+ *
+ */
 class MyAnonObject
 {
     private $_methods = array();

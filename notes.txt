@@ -1,4 +1,8 @@
 
+
+	sredjeno sve do 07 iteratora + anonymous
+	
+
 	parsanje velikog fajla (apache log)
 	
 	export tabele sa puno rekorda u fajl

@@ -39,8 +39,8 @@ unset($object['two']);
 
 /**
  * @reminder:
- * - show Countable, SeekableIterator
- * - is_array, is_object
+ * - show Countable
+ * - is_array or is_object?
  */
 
 

@@ -1,4 +1,7 @@
 <?php
+/**
+ * Closure
+ */
 
 $a = 'world';
 
@@ -10,7 +13,10 @@ $fcija = function() use ($a) {
 
 $fcija();
 
+
+
 /**
- * mention observer/hook usage
+ * @reminder:
+ * - mention observer/hook usage
  * 
  */

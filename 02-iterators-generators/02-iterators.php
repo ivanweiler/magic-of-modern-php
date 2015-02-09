@@ -59,9 +59,12 @@ while($object->valid()) {
 } */
 
 
+
 /**
- * @notes:
- * - iterator interface allows the object to dictate how it will be iterated
+ * @reminder:
+ * - iterator interface allows object to dictate how it will be iterated
  *   and what values will be available on each iteration
- * - SeekableIterator here?
+ * - show interface, mention Traversable
+ * - mention SeekableIterator
  */
+

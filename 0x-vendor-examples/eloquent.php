@@ -23,15 +23,14 @@ class User extends Model
     public $timestamps = false;
 }
 
-
-$users = User::all();
-var_dump($users);
-exit;
-
 $user = new User;
 $user->name = 'Ivan Weiler';
 $user->save();
 var_dump($user::first()->toArray());
+
+
+// $users = User::all();
+// var_dump($users);
 
 
 

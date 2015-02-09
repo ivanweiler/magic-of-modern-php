@@ -49,7 +49,8 @@ function getAllRows()
 }
 
 
-function limitRows($limit) {
+function limitRows($limit) 
+{
     $i = 0;
     foreach(getAllRows() as $row) {
         yield $row;
@@ -80,7 +81,8 @@ function my_generator()
 //generator vs iterator
 
 
-function lineGenerator($fileName) {
+function lineGenerator($fileName) 
+{
     if (!$fileHandle = fopen($fileName, 'r')) {
         throw new RuntimeException('Couldn\'t open file "' . $fileName . '"');
     }
@@ -94,7 +96,8 @@ function lineGenerator($fileName) {
 
 // versus...
 
-class LineIterator implements Iterator {
+class LineIterator implements Iterator 
+{
     protected $fileHandle;
 
     protected $line;
@@ -112,22 +115,26 @@ class LineIterator implements Iterator {
         return false !== $this->line;
     }
 
-    public function current() {
+    public function current() 
+    {
         return $this->line;
     }
 
-    public function key() {
+    public function key() 
+    {
         return $this->i;
     }
 
-    public function next() {
+    public function next() 
+    {
         if (false !== $this->line) {
             $this->line = fgets($this->fileHandle);
             $this->i++;
         }
     }
 
-    public function __destruct() {
+    public function __destruct() 
+    {
         fclose($this->fileHandle);
     }
 }

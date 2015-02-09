@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Basic array iterator example with visible pointer
+ *
+ */
 class MyIterator implements Iterator
 {
     private $values = array();

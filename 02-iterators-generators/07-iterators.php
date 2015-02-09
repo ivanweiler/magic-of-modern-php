@@ -3,6 +3,27 @@
  * Built in iterators and practical samples
  */
 
+$lines = file('../_data/demo.txt');
+foreach($lines as $line) {
+    //import line into db
+}
+
+
+$fileHandle = fopen('../_data/demo.txt', 'r');
+while (false !== $line = fgets($fileHandle)) {
+    //import line into db
+}
+fclose($fileHandle);
+
+
+
+
+
+
+
+exit;
+
+
 $fileIterator = new SplFileObject('../_data/demo.txt');
 $regexIterator = new RegexIterator($fileIterator, '/^Lorem/');
 $limitIterator = new LimitIterator($regexIterator, 0, 5);
