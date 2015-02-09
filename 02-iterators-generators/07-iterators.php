@@ -1,7 +1,17 @@
 <?php
 /**
- * Iterators practical examples
+ * Built in iterators and practical samples
  */
+
+$fileIterator = new SplFileObject('../_data/demo.txt');
+$regexIterator = new RegexIterator($fileIterator, '/^Lorem/');
+$limitIterator = new LimitIterator($regexIterator, 0, 5);
+
+foreach($limitIterator as $line) {
+    var_dump($line);
+}
+
+
 
 //list other built in iterators
 

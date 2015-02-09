@@ -1,8 +1,6 @@
 <?php
 
-//ini_set('memory_limit', '1M');
-
-//$bigData = range(1,1024*1024);
+ini_set('memory_limit', '10M');
 
 function normalDemo($howMany)
 {
@@ -20,12 +18,14 @@ function generatorDemo($howMany)
     }    
 }
 
+
 foreach(normalDemo(100000) as $value) {
     echo "$value \n";
 }
 
 
 foreach(generatorDemo(100000) as $value) {
+    //echo memory_get_usage(true) / 1024; break;
     echo "$value \n";
 }
 
