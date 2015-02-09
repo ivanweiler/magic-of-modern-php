@@ -1,5 +1,4 @@
 
-
 	parsanje velikog fajla (apache log)
 	
 	export tabele sa puno rekorda u fajl
@@ -20,7 +19,6 @@ https://github.com/laravel/framework/blob/master/src/Illuminate/View/View.php
 https://github.com/zendframework/zf1/blob/master/library/Zend/Db/Select.php
 
 
-
 Iterators
 
 http://php.net/manual/en/reserved.interfaces.php
@@ -29,6 +27,8 @@ http://fabien.potencier.org/article/45/iterator-or-iteratoraggregate
 http://stackoverflow.com/questions/10502719/difference-between-arrayiterator-arrayobject-and-array-in-php
 
 http://stackoverflow.com/questions/10057671/how-foreach-actually-works
+
+
 
 
 collection example -> 
