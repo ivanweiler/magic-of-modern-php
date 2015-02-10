@@ -4,36 +4,32 @@
  */
 class MyArrayAccess implements ArrayAccess
 {
-    private $container = array(
-        'one'   => 1,
-        'two'   => 2,
-        'three' => 3,
-    );
+    private $items = array('one' => 1, 'two' => 2, 'three' => 3);
     
     public function offsetSet($offset, $value) {
         if (is_null($offset)) {
-            $this->container[] = $value;
+            $this->items[] = $value;
         } else {
-            $this->container[$offset] = $value;
+            $this->items[$offset] = $value;
         }
     }
     
     public function offsetExists($offset) {
-        return isset($this->container[$offset]);
+        return isset($this->items[$offset]);
     }
     
     public function offsetUnset($offset) {
-        unset($this->container[$offset]);
+        unset($this->items[$offset]);
     }
     
     public function offsetGet($offset) {
-        return isset($this->container[$offset]) ? $this->container[$offset] : null;
+        return isset($this->items[$offset]) ? $this->items[$offset] : null;
     }    
 }
 
 $object = new MyArrayAccess();
-echo $object['two'];
-echo $object->offsetGet('two');
+echo $object['two'] . "\n";
+echo $object->offsetGet('two') . "\n";
 
 unset($object['two']);
 

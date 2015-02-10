@@ -105,11 +105,11 @@ $post->description = 'Lorem ipsum sit amet ..';
 $post->somethingelse = 'dummy';
 $post->save();
 
-$post
-    ->load(1)
-    ->setName('Test post 1')
-    ->setDescription('Lorem ipsum sit amet ..')
-    ->save();
+// $post
+//     ->load(1)
+//     ->setName('Test post 1')
+//     ->setDescription('Lorem ipsum sit amet ..')
+//     ->save();
 
 /**
  * @reminder:

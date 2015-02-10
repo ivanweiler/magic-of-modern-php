@@ -8,7 +8,7 @@ $capsule = new Capsule();
 $capsule->addConnection(array(
     'driver' => 'mysql', 
     'host' => 'localhost', 
-    'database' => 'magic_tests', 
+    'database' => 'magic_demo_1', 
     'username' => 'root', 
     'password' => '', 
     'charset' => 'utf8', 
@@ -16,6 +16,7 @@ $capsule->addConnection(array(
 ));
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
+/////////////////////////////////////////////
 
 class User extends Model
 {

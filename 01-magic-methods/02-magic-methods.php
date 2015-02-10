@@ -22,12 +22,22 @@ class MagicDemo
 }
 
 $object = new MagicDemo();
-$object->nonExistingMethod(1,2,3);
+$object->nonExistingMethod('one','two','three');
 
-// $object->a = 1;
-// echo $object->b;
-// MagicDemo::nonExistingStaticMethod();
+/*
+$object->a = 1;
+echo $object->b;
+MagicDemo::nonExistingStaticMethod();
+*/
 
+/*
+//performance test
+$start = microtime(true);
+for($i=0; $i<=1000000; $i++) {
+    $object->nonExistingMethod();
+}
+echo microtime(true) - $start;
+*/
 
 /**
  * @reminder:

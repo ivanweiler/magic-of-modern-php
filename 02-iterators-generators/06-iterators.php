@@ -11,7 +11,8 @@ class MyCollection implements IteratorAggregate
         $this->_items = $items;
     }
     
-    public function getIterator() {
+    public function getIterator() 
+    {
         return new ArrayIterator($this->_items);
     }
 }

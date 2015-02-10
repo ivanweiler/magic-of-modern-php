@@ -25,11 +25,12 @@ foreach ($object as $key => $value) {
     echo "$key = $value\n";
 }
 
+//$object->fromInside();
 //echo $object['a'];
 
 
 /**
  * @reminder:
  * - which object can be used in a loop in php?
- * - by default, all visible properties will be used for the iteration
+ * 
  */

@@ -23,10 +23,9 @@ class MyAnonObject
     }
 }
 
+
 $object = new MyAnonObject();
 $object->nonExistingMethod();
-
-
 
 
 // $object->addMethod('nonExistingMethod', function() {

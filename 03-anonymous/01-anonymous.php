@@ -1,10 +1,18 @@
 <?php
 
+
 $fcija = function () {
     echo "Hello World!\n";
 };
 
 $fcija();
+
+
+
+
+
+exit;
+
 
 $myArray = array(1, 2, 3);
 array_walk($myArray, function (&$value) {

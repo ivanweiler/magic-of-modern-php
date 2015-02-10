@@ -19,7 +19,6 @@ echo $object;
  * - __invoke()
  * - __set_state(), __debugInfo()
  * - mention Zend_Db_Select, Laravel_View
- * - mention Magic constants?
  */
 
 
