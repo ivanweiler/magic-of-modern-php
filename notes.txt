@@ -24,8 +24,8 @@ https://github.com/zendframework/zf1/blob/master/library/Zend/Db/Select.php
 
 
 Iterators
-
 http://php.net/manual/en/reserved.interfaces.php
+http://php.net/manual/en/spl.iterators.php
 
 http://fabien.potencier.org/article/45/iterator-or-iteratoraggregate
 http://stackoverflow.com/questions/10502719/difference-between-arrayiterator-arrayobject-and-array-in-php

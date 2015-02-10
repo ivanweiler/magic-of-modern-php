@@ -1,7 +1,9 @@
 <?php
 /**
- * Built in iterators and practical samples
+ * Iterators data stream example
  */
+
+//ini_set('memory_limit', '1M');
 
 $lines = file('../_data/demo.txt');
 foreach($lines as $line) {
@@ -22,21 +24,33 @@ fclose($fileHandle);
 
 
 exit;
-
+/////////////////////////////////////////////////////
 
 $fileIterator = new SplFileObject('../_data/demo.txt');
-$regexIterator = new RegexIterator($fileIterator, '/^Lorem/');
-$limitIterator = new LimitIterator($regexIterator, 0, 5);
-
-foreach($limitIterator as $line) {
-    var_dump($line);
+foreach($fileIterator as $line) {
+    //var_dump($line);
 }
 
 
 
-//list other built in iterators
 
-// apache log reader example; native, SplFileObject
+
+exit;
+/////////////////////////////////////////////////////
+
+
+// $regexIterator = new RegexIterator($fileIterator, '/^Lorem/');
+// $limitIterator = new LimitIterator($regexIterator, 0, 5);
+
+// foreach($limitIterator as $line) {
+//     var_dump($line);
+// }
+
+
+
+
+
+
 
 class ReverseSplFileObject extends SplFileObject
 {
@@ -61,38 +75,10 @@ class ReverseSplFileObject extends SplFileObject
     }
 }
 
-
-class TableExporter implements Iterator
-{
-    
-    public function __construct($conn, $tableName) {
-        
-    }
-    public function current () {
-        
-    }
-    
-    public function next () {
-        
-    }
-    
-    public function key () {
-        
-    }
-    
-    public function valid () {
-        
-    }
-    
-    public function rewind () {
-        
-    }
-}
-
-//new TableExporter($connection, 'table_name');
-
 /**
  * @reminder:
  * - iterators stream data
+ * - csv to db import, log reader, db export, big collections, etc.
+ * - http://php.net/manual/en/spl.iterators.php
  * 
  */

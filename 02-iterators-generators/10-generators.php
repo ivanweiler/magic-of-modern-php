@@ -1,9 +1,11 @@
 <?php
-
 //ini_set('memory_limit', '10M');
 
-function normalDemo($howMany)
-{
+/**
+ * generate and display X random numbers
+ */
+
+function generateRand($howMany) {
     $randoms = array();
     for($i = 1; $i <= $howMany; $i++) {
         $randoms[] = rand();
@@ -11,34 +13,39 @@ function normalDemo($howMany)
     return $randoms;
 }
 
-foreach(normalDemo(100000) as $value) {
+foreach(generateRand(20) as $value) {
     echo "$value \n";
 }
 
 
-
-
-function generatorDemo($howMany)
-{
-    for($i = 1; $i <= $howMany; $i++) {
-        yield rand();
-    }    
-}
-
-
-foreach(generatorDemo(100000) as $value) {
-    //echo memory_get_usage(true) / 1024; break;
-    echo "$value \n";
-}
-
-
-//is_object    
-//get_class(generatorDemo(5));
+//echo gettype(generateRand(20));
 
 
 
 
-// $generatorInstance = generatorDemo(100000);
+
+
+
+
+
+exit;
+
+// function generateRand($howMany) {
+//     for($i = 1; $i <= $howMany; $i++) {
+//         yield rand();
+//     }
+// }
+
+// foreach(generateRand(20) as $value) {
+//     //echo memory_get_usage(true) / 1024; break;
+//     echo "$value \n";
+// }
+
+
+//get_class(generateRand(5));
+
+
+// $generatorInstance = generateRand(20);
 // var_dump($generatorInstance);
 // $i = 0;
 // foreach($generatorInstance as $key => $value) {
@@ -47,10 +54,7 @@ foreach(generatorDemo(100000) as $value) {
 //     if($i == 10) break;
 // }
 
-
 // foreach($generatorInstance as $key => $value) {
 //     var_dump($key);
-//     $i++;
-//     if($i == 20) break;
 // }
 

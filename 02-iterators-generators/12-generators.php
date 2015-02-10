@@ -5,7 +5,7 @@
  */
 class MyCollection implements IteratorAggregate, Countable
 {
-    protected $_items = array(1, 2, 3);
+    protected $_items = array('one' => 1, 'two' => 2, 'three' => 3);
 
     public function getIterator()
     {
@@ -14,8 +14,8 @@ class MyCollection implements IteratorAggregate, Countable
     
     protected function _getGenerator()
     {
-        foreach($this->_items as $value) {
-            yield $value;
+        foreach($this->_items as $key => $value) {
+            yield $key => $value;
         }
     }
     
