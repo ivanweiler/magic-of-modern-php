@@ -1,4 +1,5 @@
 <?php
+
 class MagicDemo
 {
     //private $a;
@@ -30,18 +31,20 @@ echo $object->b;
 MagicDemo::nonExistingStaticMethod();
 */
 
+
+/**
+ * @reminder:
+ * - rest api example
+ * - show __callStatic
+ * - __isset(), __unset()
+ */
+
+
 /*
-//performance test
+//performance test, existing vs non-existing
 $start = microtime(true);
 for($i=0; $i<=1000000; $i++) {
     $object->nonExistingMethod();
 }
 echo microtime(true) - $start;
 */
-
-/**
- * @reminder:
- * - rest api example
- * - shoe __callStatic
- * - __isset(), __unset()
- */

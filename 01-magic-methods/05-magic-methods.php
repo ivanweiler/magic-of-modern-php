@@ -1,4 +1,5 @@
 <?php
+
 class MagicDemo
 {
     public function __toString()
@@ -22,7 +23,6 @@ echo $object;
  */
 
 
-
 /**
  * Basic View example
  *
@@ -34,7 +34,8 @@ class View
     {
         $this->template = $template;
     }
-    public function render($vars = array())
+
+    public function render($vars = [])
     {
         extract($vars);
         include "../_data/{$this->template}";
