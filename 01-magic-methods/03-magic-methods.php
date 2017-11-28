@@ -2,9 +2,9 @@
 /**
  * Data container
  */
-class Post
+class Model
 {
-    private $_data = array();
+    private $_data = [];
     
     public function __set($name, $value) 
     {
@@ -30,11 +30,9 @@ class Post
                 trigger_error("Call to undefined method " . __CLASS__ . "::$name()", E_USER_ERROR);
         }
     }
-   
 }
 
-
-$post = new Post;
+$post = new Model;
 $post->name = 'Test post';
 $post->description = 'Lorem ipsum sit amet ..';
 
