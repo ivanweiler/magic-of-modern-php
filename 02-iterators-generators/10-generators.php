@@ -1,60 +1,21 @@
 <?php
-//ini_set('memory_limit', '10M');
 
-/**
- * generate and display X random numbers
- */
-
-function generateRand($howMany) {
-    $randoms = array();
-    for($i = 1; $i <= $howMany; $i++) {
-        $randoms[] = rand();
+function generatorExample() {
+    $a = [1,2,3];
+    foreach($a as $value) {
+        //echo "yielding $value \n";
+        yield $value;
     }
-    return $randoms;
+    //echo "done generator \n";
 }
 
-foreach(generateRand(20) as $value) {
+foreach(generatorExample() as $value) {
     echo "$value \n";
 }
 
+//echo "done main \n";
 
-//echo gettype(generateRand(20));
+//echo gettype(generatorExample());
+//echo get_class(generatorExample());
 
-
-
-
-
-
-
-
-
-exit;
-
-// function generateRand($howMany) {
-//     for($i = 1; $i <= $howMany; $i++) {
-//         yield rand();
-//     }
-// }
-
-// foreach(generateRand(20) as $value) {
-//     //echo memory_get_usage(true) / 1024; break;
-//     echo "$value \n";
-// }
-
-
-//get_class(generateRand(5));
-
-
-// $generatorInstance = generateRand(20);
-// var_dump($generatorInstance);
-// $i = 0;
-// foreach($generatorInstance as $key => $value) {
-//     var_dump($key);
-//     $i++;
-//     if($i == 10) break;
-// }
-
-// foreach($generatorInstance as $key => $value) {
-//     var_dump($key);
-// }
-
+//new \Generator();

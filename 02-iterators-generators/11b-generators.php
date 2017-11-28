@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Iterator vs. Generator example
+ * Iterator vs. Generator example, read lines from file
  */
 
 function lineGenerator($fileName) 

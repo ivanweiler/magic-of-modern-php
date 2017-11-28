@@ -2,48 +2,55 @@
 /**
  * Generators in practice
  */
+//ini_set('memory_limit', '10M');
 
-include '../bootstrap.php';
 $conn = new PDO('mysql:host=localhost;dbname=magic_demo_1', 'magic', 'magic123');
 
+echo memory_get_usage(true)/1024 . "\n";
 
 $stmt = $conn->query("SELECT * FROM demo", PDO::FETCH_ASSOC);
 $results = $stmt->fetchAll();
 
-
-$stmt = $conn->query("SELECT * FROM demo", PDO::FETCH_ASSOC);
-while($row = $stmt->fetch()) {
-    //var_dump($row);
-}
+echo memory_get_usage(true)/1024 . "\n";
 
 
-
-
-
-
-//////////////////////////////////////////////
 exit;
 
+while($row = $stmt->fetch()) {
+    var_dump($row);
+}
+
+echo memory_get_usage(true)/1024 . "\n";
+
+exit;
+
+//////////////////////////////////////////////
+
+
 /**
- * Generator chain
+ * Move fetch logic to function
  */
 
-function tableGenerator() {
+function getAllRecordsFromDb() {
     global $conn;
     
     foreach ($conn->query("SELECT * FROM demo", PDO::FETCH_OBJ) as $row) {
         yield $row;
     }
     
-    echo 'CLOSE';
+    echo 'close connection';
 }
 
-foreach(tableGenerator() as $row) {
+foreach(getAllRecordsFromDb() as $row) {
     var_dump($row);
 }
 
+
 exit;
 
+/**
+ * Generator chain
+ */
 
 function limitGenerator($generator, $limit) {
     $i = 0;
