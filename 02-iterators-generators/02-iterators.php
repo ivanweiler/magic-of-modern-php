@@ -11,32 +11,32 @@ class MyIterator implements Iterator
 
     public function current()
     {
-        //echo "current \n";
+        echo "current \n";
         return current($this->items);
     }
 
     public function key()
     {
-        //echo "key \n";
+        echo "key \n";
         return key($this->items);
     }
 
     public function next()
     {
-        //echo "next \n";
+        echo "next \n";
         return next($this->items);
     }
 
     public function rewind()
     {
-        //echo "rewind\n";
+        echo "rewind\n";
         reset($this->items);
     }
 
     public function valid()
     {
         $key = key($this->items);
-        //echo "valid \n";
+        echo "valid \n";
         return ($key !== null && $key !== false);
     }
 }

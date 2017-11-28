@@ -1,7 +1,9 @@
 <?php
+
+echo "MyClass autoloaded";
+
 class MyClass
 {
     
 }
 
-echo "MyClass included";

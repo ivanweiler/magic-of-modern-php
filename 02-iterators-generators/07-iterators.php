@@ -20,15 +20,12 @@ fclose($fileHandle);
 
 
 
-
-
-
 exit;
 /////////////////////////////////////////////////////
 
 $fileIterator = new SplFileObject('../_data/demo.txt');
 foreach($fileIterator as $line) {
-    //var_dump($line);
+    var_dump($line);
 }
 
 

@@ -1,17 +1,21 @@
 <?php
 /**
- * Include paths
+ * How Include works
  */
-clearstatcache(true);
 
-set_include_path(__DIR__ . '/vendor');
+//set_include_path(__DIR__ . '/vendor');
 
-include 'to_include.php';
-
-//echo ini_get('include_path');
-//echo get_include_path();
+include 'file-to-include.php';
+echo ini_get('include_path');
 
 
+/**
+ * @reminder:
+ * - mention relative ../ paths, __DIR__, PATH_SEPARATOR
+ * - same with require
+ * - get_include_path();
+ *
+ */
 
-
-//PATH_SEPARATOR
+//this could be required at beggining of the filefor same examples?
+//clearstatcache(true);

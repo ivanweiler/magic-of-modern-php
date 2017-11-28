@@ -9,8 +9,8 @@ $capsule->addConnection(array(
     'driver' => 'mysql', 
     'host' => 'localhost', 
     'database' => 'magic_demo_1', 
-    'username' => 'root', 
-    'password' => '', 
+    'username' => 'magic',
+    'password' => 'magic123',
     'charset' => 'utf8', 
     'collation' => 'utf8_general_ci'
 ));
@@ -27,11 +27,10 @@ class User extends Model
 $user = new User;
 $user->name = 'Ivan Weiler';
 $user->save();
-var_dump($user::first()->toArray());
 
+var_dump(User::first()->toArray());
 
-// $users = User::all();
-// var_dump($users);
-
+//$users = User::all();
+//var_dump($users);
 
 

@@ -8,15 +8,9 @@ class MyClass
 
     public function __construct()
     {
-        //$this->d = 4;
+        $this->d = 4;
     }
 
-    public function fromInside()
-    {
-        foreach ($this as $key => $value) {
-            echo "$key = $value\n";
-        }
-    }
 }
 
 $object = new MyClass();
@@ -25,9 +19,7 @@ foreach ($object as $key => $value) {
     echo "$key = $value\n";
 }
 
-//$object->fromInside();
 //echo $object['a'];
-
 
 /**
  * @reminder:

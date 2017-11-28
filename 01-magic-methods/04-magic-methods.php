@@ -13,7 +13,7 @@ class Post
     
     public function __construct() 
     {
-        $this->_conn = new PDO('mysql:host=localhost;dbname=magic_demo_1', 'root', '');
+        $this->_conn = new PDO('mysql:host=localhost;dbname=magic_demo_1', 'magic', 'magic123');
     }
     
     public function __set($name, $value) 

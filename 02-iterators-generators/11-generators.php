@@ -4,7 +4,7 @@
  */
 
 include '../bootstrap.php';
-$conn = new PDO('mysql:host=localhost;dbname=magic_demo_1', 'root', '');
+$conn = new PDO('mysql:host=localhost;dbname=magic_demo_1', 'magic', 'magic123');
 
 
 $stmt = $conn->query("SELECT * FROM demo", PDO::FETCH_ASSOC);
