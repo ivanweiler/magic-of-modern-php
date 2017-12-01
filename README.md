@@ -3,4 +3,5 @@
 
 Materials for workshop, CodeCamp Osijek
 
-http://softwarecity.hr/events/event/codecamp-advanced-php/
+http://softwarecity.hr/event/codecamp-advanced-php/  
+http://softwarecity.hr/event/php-talks-magije-modernog-php-a/  
